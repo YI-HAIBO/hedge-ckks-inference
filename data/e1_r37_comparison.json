@@ -1,0 +1,32 @@
+{
+ "before": {
+  "LUT": 5057646,
+  "LUTasLogic": null,
+  "LUTasMem": null,
+  "FF": 1124535,
+  "CARRY8": 791624,
+  "BRAM_tile": 151,
+  "RAMB36": null,
+  "RAMB18": null,
+  "DSP": 1505
+ },
+ "after": {
+  "LUT": 1366912,
+  "LUTasLogic": null,
+  "LUTasMem": null,
+  "FF": 1160075,
+  "CARRY8": 114848,
+  "BRAM_tile": 151,
+  "RAMB36": null,
+  "RAMB18": null,
+  "DSP": 1457
+ },
+ "timing_before": {
+  "WHS": "-63.423"
+ },
+ "timing_after": {
+  "WHS": "-12.580"
+ },
+ "hier_before": {},
+ "hier_after": {}
+}
