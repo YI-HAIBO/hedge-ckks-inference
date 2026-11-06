@@ -1,0 +1,4 @@
+golden_lt_Q: 0 violations
+input_lt_Q: 0 violations
+f6_poly_mult_cyclic mismatch=0/8192 max_delta=0
+full_ntt mismatch=0/8192 max_delta=0  (2026-10-25 --full run, O(N^2) 查表法 6s)
