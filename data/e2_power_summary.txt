@@ -1,0 +1,14 @@
+E2 post-synthesis power estimate (real 256-bit keyswitch datapath, KS_REAL=1)
+method: Vivado report_power, vectorless default switching activity (no SAIF), post-synthesis (not routed)
+top: ac_adapter | part: xczu7ev-ffvc1156-2-e | flatten_hierarchy none
+confidence: Low (vectorless, no activity file)
+
+after (r37 serial cross):  dcp=E1_synth/r37_ac_adapter_synth.dcp
+  total_on_chip_power_W=12.679  dynamic_power_W=12.008  static_power_W=0.670
+  clocks=1.594 clb_logic=5.727 signals=4.028 bram=0.292 dsp=0.301 io=0.067
+
+before (combinational cross):  dcp=E1_synth/ac_adapter_synth.dcp
+  total_on_chip_power_W=18.285  dynamic_power_W=17.564  static_power_W=0.721
+  clocks=1.541 clb_logic=9.110 signals=6.206 bram=0.293 dsp=0.347 io=0.068
+
+delta: total -30.7%, dynamic -31.6%, clb_logic -37.1%, signals -35.1%
