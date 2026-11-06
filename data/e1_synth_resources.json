@@ -1,0 +1,66 @@
+{
+ "before": {
+  "LUT": 5057646,
+  "LUTasLogic": 4920386,
+  "LUTasMem": 137260,
+  "FF": 1124535,
+  "CARRY8": 791624,
+  "BRAM_tile": 151,
+  "RAMB36": 23,
+  "RAMB18": 256,
+  "DSP": 1505
+ },
+ "after": {
+  "LUT": 1366912,
+  "LUTasLogic": 1229082,
+  "LUTasMem": 137830,
+  "FF": 1160075,
+  "CARRY8": 114848,
+  "BRAM_tile": 151,
+  "RAMB36": 23,
+  "RAMB18": 256,
+  "DSP": 1457
+ },
+ "before_timing": {
+  "WNS": -63.423,
+  "TNS": -1793510.875,
+  "setup_fail": 42940,
+  "setup_total": 3528899,
+  "WHS": -0.085,
+  "THS": -36613.125,
+  "hold_fail": 903442,
+  "hold_total": 3528899
+ },
+ "after_timing": {
+  "WNS": -12.58,
+  "TNS": -152874.984,
+  "setup_fail": 12220,
+  "setup_total": 3546226,
+  "WHS": -0.091,
+  "THS": -39429.008,
+  "hold_fail": 968227,
+  "hold_total": 3546226
+ },
+ "hier_cross": {
+  "before_LUT": 3782593,
+  "after_LUT": 65401,
+  "before_FF": 122888,
+  "after_FF": 157130,
+  "instances": [
+   "u_ks/nptt_cross",
+   "u_nptt/nptt_cross",
+   "u_ks/parameterized"
+  ]
+ },
+ "correlation": {
+  "top": "ac_adapter",
+  "part": "xczu7ev-ffvc1156-2-e",
+  "flatten_hierarchy": "none",
+  "constraint": "clk100.xdc (100 MHz clk_main)",
+  "before_script": "hedge-scripts/e1_proj_synth.tcl (e1_direct route)",
+  "after_script": "hedge-scripts/r37_ac_adapter_synth.tcl",
+  "after_note": "nptt_cross instantiates serial ntt32_core_s / ntt64_core_s",
+  "before_date": "2026-10-31",
+  "after_date": "2026-11-01"
+ }
+}
