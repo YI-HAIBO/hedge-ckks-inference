@@ -1,0 +1,16 @@
+{
+  "n_samples": 200,
+  "ct_top1_pct": 98.5,
+  "ct_ci_lo_pct": 96.5,
+  "ct_ci_hi_pct": 100.0,
+  "pt_top1_pct": 98.5,
+  "pt_ci_lo_pct": 96.5,
+  "pt_ci_hi_pct": 100.0,
+  "agreement_rate_pct": 100.0,
+  "agreement_ci_lo_pct": 100.0,
+  "agreement_ci_hi_pct": 100.0,
+  "mean_latency_s": 382.62,
+  "total_latency_s": 76523.4,
+  "nboot": 1000,
+  "fullset_pt_top1_pct_ref": 98.02
+}
