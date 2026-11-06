@@ -1,0 +1,45 @@
+{
+  "cpu": {
+    "arch": "AMD64",
+    "cpu_count": 20,
+    "name": "Intel(R) Core(TM) i5-14600KF",
+    "cores": 14,
+    "threads": 20,
+    "max_clock_mhz": 3500
+  },
+  "fpga_ms": 31.0,
+  "rows": [
+    [
+      "ckks-ref-object",
+      1,
+      1,
+      260.5937,
+      0.0038,
+      489.9,
+      "\u539f\u59cb ckks_min(object-dtype \u6a21\u4e58), \u540c\u673a\u5b9e\u6d4b"
+    ],
+    [
+      "numpy-opt-st",
+      1,
+      5,
+      27.5598,
+      0.0363,
+      491.6,
+      "uint64 limb \u6a21\u4e58 + float64 BLAS dense, \u5355\u7ebf\u7a0b"
+    ],
+    [
+      "numpy-opt-mt",
+      20,
+      5,
+      56.3814,
+      0.0177,
+      1849.7,
+      "\u56fe\u50cf\u7ea7 ThreadPool \u5e76\u884c(\u6bcf\u56fe\u5b8c\u6574\u63a8\u7406), \u4e0e OpenBLAS \u7ebf\u7a0b\u7ade\u4e89"
+    ]
+  ],
+  "speedup_vs_fpga": {
+    "ckks-ref-object": 8406.2,
+    "numpy-opt-st": 889.0,
+    "numpy-opt-mt": 1818.8
+  }
+}
